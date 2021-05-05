@@ -19,7 +19,7 @@ class App : RequestHandler<APIGatewayV2HTTPEvent, APIGatewayV2HTTPResponse> {
         .serializationInclusion(JsonInclude.Include.NON_NULL)
         .disable(SerializationFeature.FAIL_ON_EMPTY_BEANS)
         .build()
-/***Creating simple https service using apigateway with ma**********/
+/***Creating simple https service using apigateway with Lambda**********/
     override fun handleRequest(input: APIGatewayV2HTTPEvent?, context: Context?): APIGatewayV2HTTPResponse {
         var log: LambdaLogger = context!!.logger
 
